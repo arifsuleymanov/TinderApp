@@ -3,7 +3,11 @@ package com.entity;
 import org.joda.time.Days;
 import org.joda.time.LocalDate;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.sql.Date;
 import java.util.Objects;
 
@@ -107,7 +111,7 @@ public class Profile {
 
     public Days dateDiff(){
         LocalDate lastServiceLocalDate = LocalDate.fromDateFields(last_login_date);
-        return Days.daysBetween(lastServiceLocalDate,org.joda.time.LocalDate.now());
+        return Days.daysBetween(lastServiceLocalDate, LocalDate.now());
     }
 
 }

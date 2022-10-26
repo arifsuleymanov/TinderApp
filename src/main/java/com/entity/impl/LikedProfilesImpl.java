@@ -6,11 +6,11 @@ import com.entity.inter.AbstractDao;
 import com.entity.inter.LikedProfilesInter;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
-import java.sql.Date;
 import java.util.List;
 
 public class LikedProfilesImpl extends AbstractDao implements LikedProfilesInter {

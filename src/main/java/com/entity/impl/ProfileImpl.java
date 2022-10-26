@@ -4,7 +4,11 @@ import com.entity.Profile;
 import com.entity.inter.AbstractDao;
 import com.entity.inter.ProfileInter;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
